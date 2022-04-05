@@ -5,7 +5,6 @@
       <select style="margin-top: 4rem; margin-bottom: 2rem" @change="onChange">
         <option v-for="type in types" :key="type.url">{{ type.name }}</option>
       </select>
-      <!-- <q-select filled v-model="model" :options="this.types" label="Filled" /> -->
       <div class="row q-col-gutter-lg">
         <CardPokemon
           :name="pokemon.name"

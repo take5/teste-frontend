@@ -17,8 +17,8 @@
         </p>
       </div>
       <!-- <p id="data">Peso: {{ weightInKg() }}</p> -->
-      <p id="data">Peso: {{ pokemon.weight }}</p>
-      <p id="data">Altura: {{ pokemon.height }}</p>
+      <p id="data">Peso: {{ pokemon.weight }} lb</p>
+      <p id="data">Altura: {{ pokemon.height }} ft</p>
       <p v-for="stat in pokemon.stats" :key="stat.stat.name" id="data">
         {{ stat.stat.name }}: {{ stat.base_stat }}
       </p>
@@ -50,9 +50,6 @@ export default {
       this.pokemon = response.data;
       this.weights = response.data.weight;
       this.heights = response.data.height;
-      console.log("Dados:", response.data);
-      console.log("Peso:", response.data.weight, "lb");
-      console.log("Altura:", response.data.height, "pés");
     });
   },
   computed: {
