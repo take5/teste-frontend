@@ -30,7 +30,7 @@
 <style lang="scss">
 #header {
   padding: 10px 0px;
-  height: 30vh;
+  height: 16rem;
   margin: auto;
 }
 .bg-grey-1 {

@@ -1,5 +1,6 @@
 <template>
-  <div class="dropdown">
+  <q-btn color="amber" glossy label="Idioma" />
+  <!-- <div class="dropdown">
     <button>
       {{ $t("language_picker_helper") }}
     </button>
@@ -12,32 +13,34 @@
         {{ lang.title }}
       </a>
     </div>
-  </div>
+  </div> -->
 </template>
 <script>
-export default {
-  name: "ButtonLanguage",
-  data() {
-    return {
-      languages: [
-        {
-          title: this.$t("languages.english"),
-          value: "en",
-        },
-        {
-          title: this.$t("languages.norwegian"),
-          value: "nb",
-        },
-      ],
-    };
-  },
-  methods: {
-    changeLanguage(lang) {
-      this.$i18n.locale = lang.value;
-      this.$store.dispatch("language/setLanguage", lang.value);
-    },
-  },
-};
+// export default {
+//   name: "ButtonLanguage",
+//   data() {
+//     return {
+//       languages: [
+//         {
+//           title: this.$t("languages.english"),
+//           value: "en",
+//         },
+//         {
+//           title: this.$t("languages.norwegian"),
+//           value: "nb",
+//         },
+//       ],
+//     };
+//   },
+//   methods: {
+//     changeLanguage(lang) {
+//       this.$i18n.locale = lang.value;
+//       this.$store.dispatch("language/setLanguage", lang.value);
+//     },
+//   },
+// };
+var usrlang = navigator.languages;
+console.log(usrlang);
 </script>
 <style>
 .dropdown {

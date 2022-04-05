@@ -33,8 +33,9 @@
 </template>
 
 <script>
-import api from "../services/api";
+import api from "../boot/axios";
 import router from "../router";
+import routes from "../router/routes.js";
 export default {
   name: "CardPokemon",
   props: {
@@ -57,13 +58,14 @@ export default {
   },
   methods: {
     navigate: function () {
+      console.log("teste", router);
       router.push({ path: `/${this.name}` });
+      // this.$router.push({ path: `/${this.name}` });
     },
   },
   watch: {
     filter: function (newVal) {
       if (newVal === "all") return (this.shouldRender = true);
-
       this.shouldRender = this.types.map((t) => t.type.name).includes(newVal);
     },
   },

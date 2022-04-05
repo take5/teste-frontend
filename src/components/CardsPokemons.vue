@@ -1,6 +1,7 @@
 <template>
   <div id="q-app" style="min-height: 100vh">
     <div class="q-pa-md" id="container">
+      <span style="color: black">Filtro </span>
       <select style="margin-top: 4rem; margin-bottom: 2rem" @change="onChange">
         <option v-for="type in types" :key="type.url">{{ type.name }}</option>
       </select>
@@ -19,7 +20,7 @@
 </template>
 
 <script>
-import api from "../services/api";
+import api from "../boot/axios";
 import router from "../router";
 import CardPokemon from "./CardPokemon.vue";
 export default {

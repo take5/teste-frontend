@@ -35,7 +35,7 @@
 
 <script>
 import { defineComponent } from "vue";
-import api from "../services/api";
+import api from "../boot/axios";
 import router from "../router";
 export default {
   name: "PokemonPage",
