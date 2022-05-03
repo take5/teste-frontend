@@ -25,7 +25,7 @@ O link com o repositório contendo o resultado final do seu trabalho deve ser en
 - [ ] A SPA deve possuir um botão para que o idioma seja alterado (português / inglês)
 - [ ] O idioma inicial da aplicação deve detectar o idioma do navegador do usuário. Utilize português como idioma padrão
 - [ ] A seleção do idioma deve ser armazenado em uma store do [Vuex](https://vuex.vuejs.org/ "Documentação Vuex") e essa store deve ser persistida entre sessões
-- [ ] Os dados de peso (weight) e altura (height) do Pokémon devem ser localizadas. Por padrão a API entrega as informações em libras (peso) e pés (altura). Deve ser convertido para quilos (peso) e metros (altura), além do exibir o sinal correto na frente do valor (kg, m, lb, ft)
+- [ ] Os dados de peso (weight) e altura (height) do Pokémon devem ser localizadas. Por padrão a API entrega as informações em libras (peso) e polegadas (altura). Deve ser convertido para quilos (peso) e metros (altura), além do exibir o sinal correto na frente do valor (kg, m, lb, ft)
 - [ ] Na listagem dos Pokémons deve haver filtros para que sejam exibidos apenas Pokémons de um tipo específico (normal, fighting, flying, poison, ground, rock, bug, ghost, steel, fire, water, grass, electric, psychic, ice, dragon, dark, fairy, unknown e shadow)
 - [ ] Os tipos devem ser localizados para o idioma selecionado pelo usuário
 
